@@ -1,5 +1,9 @@
-html, body {
+html, body, ul, header, html, h2, h3 {
 	margin: 0;
 	padding: 0;
 	border: 0;
+}
+
+li {
+	list-style: none;
 }

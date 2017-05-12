@@ -4,4 +4,12 @@ export const selectAllPokemon = (state) => {
   return values(state.pokemon);
 };
 
-window.selectAllPokemon = selectAllPokemon;
+export const selectPokemonItem = (state, itemId) => {
+  let newItem;
+  state.pokemonDetail.items.forEach((item) => {
+    if (item.id === parseInt(itemId)) {
+      newItem = item;
+    }
+  });
+  return newItem;
+};
